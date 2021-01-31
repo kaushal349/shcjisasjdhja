@@ -1,0 +1,27 @@
+.piechartdiv{
+    margin: 10%;
+    height: 12em;
+}
+
+.buttons{
+    text-align: center;
+}
+
+.mybutton{
+    border: none;
+    background-color: white;
+    font-size: small;
+    outline: none;
+}
+
+
+.colorbutton{
+    height: 0.75em;
+    width: 2.5em;
+    border: none;
+}
+
+.pietitle{
+    text-align: center;
+    margin-top: 5%;
+}
