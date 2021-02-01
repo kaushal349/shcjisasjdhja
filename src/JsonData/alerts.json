@@ -1,0 +1,38 @@
+[
+    {
+       "id": 1,
+       "msg": "Two boats docked for a long time",
+       "lat": 8.320703,
+       "lng": 77.99709
+    },
+    {
+       "id": 2,
+       "msg": "Ship stationary for a week",
+       "lat": 8.320703,
+       "lng": 77.99709
+    },
+    {
+       "id": 3,
+       "msg": "Big vessel without any AIS signature",
+       "lat": 8.320703,
+       "lng": 77.99709
+    },
+    {
+       "id": 4,
+       "msg": "Boats docks for a long time",
+       "lat": 8.320703,
+       "lng": 77.99709
+    },
+    {
+       "id": 5,
+       "msg": "Boats docks for a long time",
+       "lat": 8.320703,
+       "lng": 77.99709
+    },
+    {
+       "id": 6,
+       "msg": "Boats docks for a long time",
+       "lat": 8.320703,
+       "lng": 77.99709
+    }
+ ]

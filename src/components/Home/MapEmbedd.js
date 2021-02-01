@@ -2,7 +2,6 @@ import React from 'react';
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 const MapEmbedd = (props) => {
-
   return (
     <div>
       <Map
@@ -13,7 +12,7 @@ const MapEmbedd = (props) => {
           lng: -120.7060049,
         }}
         style={{
-          height: `100%`,
+          height: `800px`,
         }}
       />
     </div>
@@ -21,5 +20,5 @@ const MapEmbedd = (props) => {
 };
 
 export default GoogleApiWrapper({
-  apiKey: process.env.GAPI | 0,
+  apiKey: 'AIzaSyCvPv1nI4ihrAv3a7pAXjGZUCs_YRiIuOc',
 })(MapEmbedd);

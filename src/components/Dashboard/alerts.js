@@ -1,43 +1,35 @@
+import { useHistory } from 'react-router-dom';
+
 const Alerts = (props) => {
-    let alertsList = [{
-            msg: 'Two boats docked for a long time',
-            lat: 8.320702647232439,
-            lng: 77.99709305044445,
-        },{
-            msg: 'Ship stationary for a week',
-            lat: 8.320702647232439,
-            lng: 77.99709305044445,
-        },{
-            msg: 'Big vessel without any AIS signature',
-            lat: 8.320702647232439,
-            lng: 77.99709305044445,
-        },{
-            msg: 'Boats docks for a long time',
-            lat: 8.320702647232439,
-            lng: 77.99709305044445,
-        },{
-            msg: 'Boats docks for a long time',
-            lat: 8.320702647232439,
-            lng: 77.99709305044445,
-        },{
-            msg: 'Boats docks for a long time',
-            lat: 8.320702647232439,
-            lng: 77.99709305044445,
-        },
-      ];
-    return <>
-        <h2 style={{fontSize: '1.5em'}}>Alerts: </h2>
-        <div class="row justify-content-md-center">
-            {alertsList.map(alert =>{
-                return <div class="card my-2 shadow-sm" style={{width: `90%`}}>
-                    <div class="card-body">
-                        <h5 class="card-title">{alert.msg}</h5>
-                        <p class="card-text">({alert.lat}, {alert.lng})</p>
-                    </div>
-                </div>
-            })}
-        </div>
+  let alertsList = require('../../JsonData/alerts.json');
+  const history = useHistory();
+  return (
+    <>
+      <h2 style={{ fontSize: '1.5em' }} className='pl-4 font-weight-bold'>
+        Alerts:{' '}
+      </h2>
+      <div className='row justify-content-center'>
+        {alertsList.map((alert) => {
+          return (
+            <div
+              className='card my-2 shadow-sm rounded'
+              style={{ width: `90%`, cursor: 'pointer' }}
+              onClick={() => history.push(`/alert-detail/${alert.id}`)}
+            >
+              <div className='card-body'>
+                <h5 className='card-title' style={{ fontSize: '1em' }}>
+                  {alert.msg}
+                </h5>
+                <p className='card-text'>
+                  ({alert.lat}, {alert.lng})
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </>
+  );
 };
 
 export default Alerts;
