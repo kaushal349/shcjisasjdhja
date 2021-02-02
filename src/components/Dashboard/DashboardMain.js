@@ -6,7 +6,7 @@ import { Navbar } from 'react-bootstrap';
 const DashboardMain = () => {
   return (
     <div>
-      <Navbar style={{ background: '#9fa8da' }} variant='dark'>
+      <Navbar style={{ background: '#9fa8da' }} variant='dark' sticky='top'>
         <Navbar.Brand
           className='text-capitalize font-weight-bold'
           style={{ textAlign: 'left', color: 'black' }}
